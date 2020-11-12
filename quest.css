@@ -1,9 +1,9 @@
-.container{
+.containers{
 	 position: absolute;
-  left: -60px;
+  left: -120px;
   transition: 0.3s;
   padding: 15px;
-  width: 120px;
+  width: 200px;
   height: 200px;
   text-decoration: none;
   font-size: 20px;
@@ -15,9 +15,19 @@
 
 }
 
+
 .d-flex {
 	margin-left: 5px;
   margin-bottom:  10px;
+  margin-right: 5px;
+}
+.navbar-btn{
+  /*margin-left: 2px;*/
+  margin-right: 5px;
+  width: 10vw;
+  font-size: 1.75vw;
+  padding-left:  5px;
+  /*height: 4vw;*/
 }
 .button {
   background-color: #4CAF50;
@@ -38,7 +48,7 @@ margin-top: 40px;
   /*margin-left: 10px;*/
   border-radius: 10px;
   /*margin-left: 5px;*/
-  width: 10vw;
+  /*width: 10vw;*/
   font-size: 1.5vw;
   font-family: times new roman;
 }
@@ -48,32 +58,34 @@ margin-top: 40px;
 	padding-left:  50px;
 }*/
 
-.container:hover {
+.containers:hover {
   left: -20;
   /*background-color: #2196F3;*/
 }
 
 #rules{
 
-	width: 100px;
+	width: 140px;
 	
     
 }
 #questions{
 	margin-top: 20px;
-	width: 100px;
+	width: 140px;
     
 }
 #qbtn{
   margin-top:80px;
 }
 .fa{
-	padding-left: 40px; 
+	/*padding-left: 60px; */
   justify-content: flex-end;
+  float: right;
 }
 .fas{
-	padding-left: 40px;
+	/*padding-left: 60px;*/
   justify-content: end;
+  float: right;
 }
 .container-fluid{
    margin-left: 10vw;
@@ -99,7 +111,43 @@ margin-top: 40px;
     font-size: 2vw;
     padding: 2px;
 }
+#Button_subs{
+  
+    justify-content: center;
+    font-size: 2vw;
+    padding: 2px;
+    width: 140%;
 
+}
+#Button_subm{
+  
+    justify-content: center;
+    font-size: 2vw;
+    padding: 2px;
+    width: 80%;
+    margin-left: 100px;
+
+}
+
+.screen{
+  margin-left: 33%;
+  
+}
+.mobile{
+  margin-left: 21%;
+  
+}
+
+@media screen and (min-width:768px){
+  .mobile{
+    display: none;
+  }
+}
+@media screen and (max-width: 767px){
+  .screen{
+    display: none;
+  }
+}
 #Grid{
     width:200%;
     /* margin-top: 40%; */
@@ -164,4 +212,33 @@ margin-top: 40px;
   font-size: 50px;
   height: 70px;
   width: 200px;
+}
+
+.modal-body{
+  font-size: 20px;
+  font-family: times new roman;
+}
+
+#indent{
+  text-indent: 20px;
+}
+
+.btn-primary{
+  width:120px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: blue;
+   color: white;
+   text-align: center;
+}
+#nav_b{
+ right: 0;
+ bottom: -55px;
+}
+.time{
+  font-size: 5vw;
 }
