@@ -1,305 +1,156 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" type="text/css" href="quest.css">
+  <script src="question.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm  navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Credenz</a>
+  <a href="#myModal" data-toggle = "modal" data-target= "#myModal" class="nav-link">Instructions</a>
+  <a href="#myModal" data-toggle = "modal" data-target= "#modalMy" class="nav-link">Questions</a>
+    <div class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex justify-content-center" id="countdown">
+<div class="time"> 
+  <div> 
+    <span class="minutes" id="minute"></span> 
+    <span class="seconds" id="second"></span> 
+  </div>
+</div> 
+  </div>
+</nav>
+<div>
 
-body{
-  background-color:#013226;
-  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-}
+<div class="container-fluid">
 
-@media screen and (min-width:768px){
- .containers{
-   position: absolute;
-  right: 10px;
-  transition: 0.3s;
-  width: 500px;
-  height: 100px;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 0 5px 5px 0;
-  margin-top: 3%;
-    top: 80px;
-    margin: 5px;
+<div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
 
-}
-#endButtons{
-  margin-top: 3vw;
-  margin-left: 12vw;
-  background-color:#013226;
-  color: white;
-  width: 8vw;
-  height: 2vw;
-  border-radius: 10px;
-  padding-bottom: 30px;
-  box-shadow: 5px;
-}
-#endSubmit{
-  background-color: #000;
-  color: white;
-  width: 15vw;
-  border-radius: 10px;
-  margin-top: -7px;
-  margin-left: 40vw;
-}
-#OP{
-    font-size: 2vw;    
-    padding-left: 5px;
-}
+            <div class="modal-header">
+                <h4 class="modal-title" id="myLargeModalLabel">General Instructions: </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            <p>1.	This paper contains 35 questions.<br>
+			2.	The answer to the questions can be MCQ, single word or integer type.<br>
+			3.	Paper contains three types of questions-<br>
+			
+					<p id="indent">•	1 star-questions (*)- 1 mark</p>
+					<p id="indent">•	2 star-questions (**)- 2 marks</p>
+					<p id="indent">•	3 star-questions (***)- 3 marks</p>
+			4.	There is NO NEGATIVE MARKING.<br>
+			5.	Maximum time allotted: - 40 min<br>
+			6.	Before toggling between two questions, you need to spend minimum 10 sec on the current question.<br>
+			7.	Each page will have four buttons-<br>
+			<p id="indent">
+					<p id="indent">•	Previous – save and previous</p>
+					<p id="indent">•	Next – save and next</p>
+					<p id="indent">•	Submit – submit test</p>
+					<p id="indent">•	Clear – clear response</p>
+			8.	Paper will be auto submitted after time runs out.<br>
+			9.	No queries regarding the correctness of the question shall be entertained.<br>
+		   10.	Internet and power failure problems will not be entertained.</p>
 
-#OPx{
-    font-size: 2vw;    
-    padding-left: 10px;
-    margin-left: 18px;
-}
-#Q{
-    font-size: 1.75vw;
-    padding-left: 18px;
-    padding-top: 10px;
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-lg10" id="modalMy" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title" id="myLargeModalLabel">QUESTIONS</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="big">
+      <div class = " d-flex justify-content-center"  id="row1"> 
+        
+       <button class="button col-lg-1 col-md-1" >01</button>
+       <a href="#" class="button col-lg-1 col-md-1">02</a>
+       <a href="#" class="button col-lg-1 col-md-1">03</a>
+       <a href="#" class="button col-lg-1 col-md-1">04</a>
+       <a href="#" class="button col-lg-1 col-md-1">05</a>
+       <a href="#" class="button col-lg-1 col-md-1">06</a>
+       <a href="#" class="button col-lg-1 col-md-1">07</a>
+      </div>
     
-}
+      <div class = " d-flex justify-content-center"  id="row2">
+       <a href="#" class="button col-lg-1 col-md-1">08</a>
+       <a href="#" class="button col-lg-1 col-md-1">09</a>
+       <a href="#" class="button col-lg-1 col-md-1">10</a>
+       <a href="#" class="button col-lg-1 col-md-1">11</a>
+       <a href="#" class="button col-lg-1 col-md-1">12</a>
+       <a href="#" class="button col-lg-1 col-md-1">13</a>
+       <a href="#" class="button col-lg-1 col-md-1">14</a>      
+      </div>
+      <div class = " d-flex justify-content-center"  id="row3">
+       <a href="#" class="button col-lg-1 col-md-1">15</a>
+       <a href="#" class="button col-lg-1 col-md-1">16</a>
+       <a href="#" class="button col-lg-1 col-md-1">17</a>
+       <a href="#" class="button col-lg-1 col-md-1">18</a>
+       <a href="#" class="button col-lg-1 col-md-1">19</a>
+       <a href="#" class="button col-lg-1 col-md-1">20</a>
+       <a href="#" class="button col-lg-1 col-md-1">21</a>      
+      </div>
+      <div class = " d-flex justify-content-center"  id="row4">
+       <a href="#" class="button col-lg-1 col-md-1">22</a>
+       <a href="#" class="button col-lg-1 col-md-1">23</a>
+       <a href="#" class="button col-lg-1 col-md-1">24</a>
+       <a href="#" class="button col-lg-1 col-md-1">25</a>
+       <a href="#" class="button col-lg-1 col-md-1">26</a>
+       <a href="#" class="button col-lg-1 col-md-1">27</a>
+       <a href="#" class="button col-lg-1 col-md-1">28</a>      
+      </div>
+      <div class = " d-flex justify-content-center"  id="row5">
+       <a href="#" class="button col-lg-1 col-md-1">29</a>
+       <a href="#" class="button col-lg-1 col-md-1">30</a>
+       <a href="#" class="button col-lg-1 col-md-1">31</a>
+       <a href="#" class="button col-lg-1 col-md-1">32</a>
+       <a href="#" class="button col-lg-1 col-md-1">33</a>
+       <a href="#" class="button col-lg-1 col-md-1">34</a>
+       <a href="#" class="button col-lg-1 col-md-1">35</a>      
+      </div>
 
-.row{
-  padding-left: 12vw;
-  height: 65%;
+    </div>
+        </div>
+        
+            </div>
+        </div>
+    </div>
+</div>
 
-}
-.container-fluid{
-   margin-top: 2vw;
-    padding-top: 5%;
-    float: right;
-    background-color:#013226;
-    width: 100%;
-}
-.nav-link{
-  color: white;
-}
-.navbar-brand{
-  font-size: 2vw;
-}
-#countdown{
-  /*background-color: #fff;*/
-  display: flex;
-  align-items: center;
-  /*justify-content: center;*/
-  font-size: 0.2vw;
-  height: 50px;
-  width: 150px;
-  background-color:#000;
-  margin: 0px;
-  left: 60%;
-  right: 0%;
-}
+  <div class="row">
+   <div class="col-lg-10 col-md-5 col-sm-8 col-8 coast"><p id="Q">Q1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?</p>
+                    <input type="radio" id="OPx" name="Options" value="Answer">
+                    <label for="O1" id="OP">  Option1</label><br>
+                    <input type="radio" id="OPx" name="Options" value="Answer">
+                    <label for="O2" id="OP">  Option2</label><br>
+                    <input type="radio" id="OPx" name="Options" value="Answer">
+                    <label for="O3" id="OP">  Option3</label><br>
+                    <input type="radio" id="OPx" name="Options" value="Answer">
+                    <label for="O4" id="OP">  Option4</label><br>
+  <button class="btn  navbar-btn" id="endButtons">Prev</button>
+  <button class="btn navbar-btn" id="endButtons">Save</button>
+  <button class="btn navbar-btn" id="endButtons">Next</button></div></div> 
+  <br>
+  <button class="btn navbar-btn d-flex justify-content-center" id="endSubmit">  Submit</button></div></div> 
+<div class="footer">
+  <p>Footer</p>
+</div>
 
-.mob{
-  margin:10px;
-}
-  .scr{
-    display: none;
-  }
-  .containers:hover {
-  right: -20px;
-
-}
-}
-@media screen and (max-width: 767px){
-.containers{
-   position: absolute;
-  right: -28px;
-  transition: 0.3s;
-  text-decoration: none;
-  border-radius: 0 5px 5px 0;
-  width: 600px;
-  height: 200px;
-}
-
-#OP{
-    font-size: 5vw; 
-
-}
-.navbar-brand{
-  font-size: 4vw;
-  margin-bottom: 0;
-}
-.nav-link{
-  color: white;
-  font-size: 1.5vw;
-}
- 
-#Q{
-    font-size: 5vw;  
-    width: 100%;
-    padding: 5px;
-
-}
-.coast{
-  width: 1000px;
-}
-
-.row{
-  padding-left: 18vw;
-  height: 50%;
-  width: 400%
-margin-left: 5px;
-}
-.container-fluid{
-   margin-top: 22vw;
-    padding-top: 5%;
-    float: right;
-    background-color:#013226;
-    /*margin-left: 25vw;*/
-    width: 1000vw;
-
-}
-#endButtons{
-  margin-top: 2vw;
-  margin-left: 5vw;
-  background-color:#013226;
-  color: white;
-  width: 10vw;
-  border-radius: 5px;
-  padding-left: 5px;
-  justify-content: center;
-  font-size: 2.5vw;
-  margin-bottom: 5px;
-}
-#endSubmit{
-  background-color: #000;
-  color: white;
-  width: 15vw;
-  border-radius: 10px;
-  margin-top: 44vw;
-  margin-left: 36.5vw;
-  border-radius: 5px;
-  justify-content: center;
-}
-
-#countdown{
-  display: flex;
-  align-items: center;
-  font-size: 0.5vw;
-  height: 50px;
-  width: 150px;
-  background-color:#000;
-  margin: 0px;
-  left: 2%;
-  right: 0%;
-}
-}
-
-.navbar{
-  background-color: #000;
-}
-}
-.d-flex {
-  margin-left: 5px;
-  margin-bottom:  8px;
-  margin-right: 5px;
-}
-.navbar-btn{
-  /*margin-left: 2px;*/
-  margin-right: 5px;
-  width: 5vw;
-  font-size: 1.75vw;
-  padding-left:  5px;
-  justify-content: center;
-  /*height: 4vw;*/
-}
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  text-align: center;
-  display: inline-block;
-  font-size: 14px;
-  cursor: pointer;
-margin-top: 40px;
-  margin-right: 10px;
-  border-radius: 10px;
-  font-size: 1.5vw;
-  font-family: times new roman;
-}
-
-
-.fa{
- 
-  justify-content: flex-end;
-  float: right;
-}
-.fas{
- 
-  justify-content: flex-end;
-  float: right;
-}
-.coast {
-  padding:1px;
-  background: linear-gradient(0deg,#137c5f, #44bb97, #99ebd2);
-  /*width: 50%;*/
-
-}
-.col-lg-8 .col-md-5 .col-sm-8 {
-  padding-left: 100px;
-  
-}
-
-
-.p{
-    border: solid 1px red;
-}
-
-.floating{
-    position: fixed;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: translate(-185%, 0);
-  } 
-
-  .floating a{
-    color: #fff;
-    background: rgba(0, 0, 0, 0.4);
-    font-size: 2vw;
-    font-weight: 600;
-    text-decoration: none;
-    display: block;
-    margin: 5%;
-    /*padding: 8%;*/
-    width: 200%;
-    text-align: right;
-    border-radius: 50px;
-    transition: 1s;
-    transition-property: transform;
-  }
-  
-  .floating a:hover{
-    transform: translate(40%, 0);
-  }
-
-.modal-body{
-  /*font-size: 20px;*/
-  font-family: times new roman;
-}
-
-#indent{
-  text-indent: 20px;
-}
-
-
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #000;
-   color: white;
-   text-align: center;
-}
-
-.time{
-  font-size: 3.5vw;
-  color: white;
-  justify-content: center;
-
-}
-div {
-  overflow: hidden;
-}
+</body>
+</html>
