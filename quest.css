@@ -104,11 +104,12 @@ body{
 }
 .navbar-brand{
   font-size: 4vw;
-  margin-bottom: 0;
+  margin: 0;
 }
 .nav-link{
   color: white;
-  font-size: 1vw;
+  font-size: 2vw;
+  margin:0;
 }
  
 #Q{
@@ -116,9 +117,6 @@ body{
     width: 100%;
     padding: 5px;
 
-}
-.coast{
-  width: 1000px;
 }
 
 .row{
