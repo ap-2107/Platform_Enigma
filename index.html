@@ -1,4 +1,4 @@
- <html lang="en">
+<html lang="en">
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
@@ -12,33 +12,24 @@
   <script src="question.js"></script>
 </head>
 <body>
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Credenz</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#contact_us">Contact Us</a>
-            </li>           
-          </ul>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-sm  navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Credenz</a>
+  <a href="#myModal" data-toggle = "modal" data-target= "#myModal" class="nav-link">Instructions</a>
+  <a href="#myModal" data-toggle = "modal" data-target= "#modalMy" class="nav-link">Questions</a>
+    <div class="col-lg-2 col-md-3 col-sm-4 col-4 d-flex justify-content-center" id="countdown">
+<div class="time"> 
+  <div> 
+    <span class="minutes" id="minute"></span> 
+    <span class="seconds" id="second"></span> 
+  </div>
+</div> 
+  </div>
+</nav>
+<div>
+
 <div class="container-fluid">
 
-<div class="containers">  
-
-<button type="button" class="btn btn-primary col-lg-10 scr"  data-toggle="modal" data-target=".bd-example-modal-lg" id="rules">Rules<i class='fas fa-file-alt'></i></button><br>
-<button type="button" class="btn btn-primary col-lg-10 scr" data-toggle="modal" data-target=".bd-example-modal-lg10" id="questions"> Questions <i class="fa fa-question-circle" aria-hidden="true"></i></button>
-
-<button type="button" class="btn btn-primary col-3 mob" data-toggle="modal" data-target=".bd-example-modal-lg" id="rules">Rules<i class='fas fa-file-alt'></i></button><br>
-<button type="button" class="btn btn-primary  col-3 mob" data-toggle="modal" data-target=".bd-example-modal-lg10" id="questions">Questions  <i class="fa fa-question-circle" aria-hidden="true"></i></button>
-
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
@@ -73,7 +64,7 @@
         </div>
     </div>
 </div>
-<div class="modal fade bd-example-modal-lg10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1"
+<div class="modal fade bd-example-modal-lg10" id="modalMy" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1"
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -141,53 +132,22 @@
         </div>
     </div>
 </div>
-</div>
-  <div class="row">
-   
-  
-  
-  <div class="col-lg-10 col-md-5 col-sm-8 col-8"><p id="Q">Q1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?</p>
-                    <input type="radio" id="O1" name="Options" value="Answer">
-                    <label for="O1" id="OP">  Option1</label><br>
-                    <input type="radio" id="O2" name="Options" value="Answer">
-                    <label for="O2" id="OP">  Option2</label><br>
-                    <input type="radio" id="O3" name="Options" value="Answer">
-                    <label for="O3" id="OP">  Option3</label><br>
-                    <input type="radio" id="O4" name="Options" value="Answer">
-                    <label for="O4" id="OP">  Option4</label><br>
-                    <!-- <form action="">
-                        <div  id="Buttons-end" class="form-row d-flex justify-content-around">
-                            <button id="Button_last" type="button" class="btn btn-info p-2 m-3">Previous</button>
-                            <button id="Button_last" type="button" class="btn btn-info p-2 m-3">Next</button>
-                            <input type="submit" value="Save" id="Button_last" class="btn btn-info p-2 m-3">
-                             
-                        </div>
-                    </form>--></div> 
-  <div class="col-lg-2 col-md-3 col-sm-4 col-4" id="countdown">
-<div class="time"> 
-  <div> 
-    <span class="minutes" id="minute"></span> 
-    <span class="seconds" id="second"></span> 
-  </div>
-</div> 
-  </div>
-</div>
-</div>
- </div>
 
-        <nav class="navbar bottom " id="nav_b">
-  
-  <div class="d-flex justify-content-start">
-  <button class="btn btn-info navbar-btn ">Clear</button>
-  <button class="btn btn-info navbar-btn "> Invalid</button></div>
-    <div class="d-flex justify-content-center">
-    <button class="btn btn-info navbar-btn">Prev</button>
-  <button class="btn btn-info navbar-btn">Save</button>
-  <button class="btn btn-info navbar-btn">Next</button></div>
-  
-  <div class="d-flex justify-content-end">
-  <button class="btn btn-info navbar-btn navbar-right">Submit</button></div>
-  </nav>
+  <div class="row">
+   <div class="col-lg-10 col-md-5 col-sm-8 col-8 coast"><p id="Q">Q1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?</p>
+                    <input type="radio" id="OP" name="Options" value="Answer">
+                    <label for="O1" id="OP">  Option1</label><br>
+                    <input type="radio" id="OP" name="Options" value="Answer">
+                    <label for="O2" id="OP">  Option2</label><br>
+                    <input type="radio" id="OP" name="Options" value="Answer">
+                    <label for="O3" id="OP">  Option3</label><br>
+                    <input type="radio" id="OP" name="Options" value="Answer">
+                    <label for="O4" id="OP">  Option4</label><br>
+  <button class="btn  navbar-btn" id="endButtons">Prev</button>
+  <button class="btn navbar-btn" id="endButtons">Save</button>
+  <button class="btn navbar-btn" id="endButtons">Next</button></div></div> 
+  <br>
+  <button class="btn navbar-btn d-flex justify-content-center" id="endSubmit">  Submit</button></div></div> 
 <div class="footer">
   <p>Footer</p>
 </div>
