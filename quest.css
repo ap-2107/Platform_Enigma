@@ -111,7 +111,7 @@ body{
 }
 
 #OP{
-    font-size: 5vw; 
+    font-size: 2.5vw; 
 
 }
 .navbar-brand{
@@ -124,7 +124,7 @@ body{
 }
  
 #Q{
-    font-size: 2vw;  
+    font-size: 2.5vw;  
     width: 100%;
     padding: 5px;
 
@@ -149,7 +149,7 @@ margin-left: 5px;
 
 }
 #endButtons{
-  margin-top: 1vw;
+  margin-top: 2.5vw;
   margin-left: 5vw;
   background-color:#013226;
   color: white;
