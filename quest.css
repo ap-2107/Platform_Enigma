@@ -21,7 +21,7 @@ body{
 
 }
 #endButtons{
-  /*margin-top: 3vw;*/
+  margin-top: 1vw;
   margin-left: 12vw;
   background-color:#013226;
   color: white;
@@ -165,7 +165,7 @@ margin-left: 5px;
   color: white;
   width: 15vw;
   border-radius: 10px;
-  margin-top: 44vw;
+  margin-top: 38vw;
   margin-left: 36.5vw;
   border-radius: 5px;
   justify-content: center;
