@@ -22,6 +22,11 @@ body{
 .footer{
   padding-left: 45vw;
 }
+  
+.foot{
+	height:2vw;
+	margin-left: 0
+}
 .row{
   padding-left: 12vw;
   height: 65%;
@@ -120,6 +125,10 @@ body{
   padding-left: 32vw;
 }
 
+.foot{
+	height:5vw;
+	margin-left: 0
+}
 .row{
   padding-left: 12vw;
   height: 100%;
