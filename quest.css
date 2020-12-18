@@ -1,10 +1,16 @@
-
 body{
-  background-color:#013226;
+  /*background-color:#013226;*/
+  background-image:  url('puz.jpg');
+   
   font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 @media screen and (min-width:768px){
+  .body{
+    background-position: center;
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+  }
  .containers{
    position: absolute;
   right: 10px;
@@ -19,14 +25,17 @@ body{
     margin: 5px;
 
 }
+.navbar{
+  background-color: black;
+}
 .footer{
   padding-left: 44vw;
   padding-top: 5px;
 }
 .foot{
-	height:2vw;
-	margin-left: 0
-	padding-top:5px;
+  height:2vw;
+  margin-left: 0
+  padding-top:5px;
 }
 
 .row{
@@ -36,7 +45,7 @@ body{
 #endButtons{
   margin-top: 1vw;
   margin-left: 12vw;
-  background-color:#013226;
+  background-color:#001a33;
   color: white;
   width: 8vw;
   height: 2vw;
@@ -45,8 +54,8 @@ body{
   box-shadow: 5px;
 }
 #endSubmit{
-  background-color: #000;
-  color: white;
+  background-color:#0066cc;
+  color: black;
   width: 15vw;
   margin-bottom: 5px;
   border-radius: 10px;
@@ -75,7 +84,6 @@ body{
    margin-top: 2vw;
     padding-top: 5%;
     float: right;
-    background-color:#013226;
     width: 100%;
 }
 .nav-link{
@@ -110,6 +118,11 @@ body{
 }
 }
 @media screen and (max-width: 767px){
+  .body{
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+  }
 .containers{
    position: absolute;
   right: -28px;
@@ -122,7 +135,7 @@ body{
 
 #OP{
     font-size: 4vw; 
-
+    margin-left: 1vw;
 }
 .footer{
   padding-left: 38vw;
@@ -141,9 +154,9 @@ body{
   font-size: 2vw;
 }
 .foot{
-	height:5vw;
-	margin-left: 0
-	margin-top:2px;
+  height:5vw;
+  margin-left: 0
+  margin-top:2px;
 }
 
  
@@ -167,7 +180,7 @@ margin-left: 5px;
    margin-top: 22vw;
     padding-top: 5%;
     float: right;
-    background-color:#013226;
+    /*background-color:#013226;*/
     /*margin-left: 25vw;*/
     width: 1000vw;
 
@@ -178,7 +191,7 @@ margin-left: 5px;
 #endButtons{
   margin-top: 6vw;
   margin-left: 5vw;
-  background-color:#013226;
+  background-color:#001a33;
   color: white;
   width: 10vw;
   border-radius: 5px;
@@ -188,7 +201,7 @@ margin-left: 5px;
   margin-bottom: 5px;
 }
 #endSubmit{
-  background-color: #000;
+  background-color: #0066cc;
   color: white;
   width: 15vw;
   border-radius: 10px;
@@ -261,8 +274,8 @@ margin-top: 40px;
 }
 .coast {
   padding:1px;
-  background: linear-gradient(0deg,#137c5f, #44bb97, #99ebd2);
-  /*width: 50%;*/
+/*  background: linear-gradient(0deg,#137c5f, #44bb97, #99ebd2);*/
+background-color:  #80bfff;
 
 }
 .col-lg-8 .col-md-5 .col-sm-8 {
