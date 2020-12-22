@@ -29,7 +29,7 @@ body{
   background-color: black;
 }
 .footer{
-  padding-left: 44vw;
+  padding-left: 32vw;
   padding-top: 5px;
 }
 .foot{
@@ -61,7 +61,6 @@ body{
   border-radius: 10px;
   margin-top: -15px;
   margin-left: 40vw;
-  
 }
 #OP{
     font-size: 2vw;    
@@ -92,6 +91,9 @@ body{
 .navbar-brand{
   font-size: 2vw;
 }
+#brand{
+   margin-left: 16vw;
+}
 #countdown{
   /*background-color: #fff;*/
   display: flex;
@@ -102,7 +104,7 @@ body{
   width: 150px;
   background-color:#000;
   margin: 0px;
-  left: 60%;
+  left: 55%;
   right: 0%;
 }
 
@@ -138,7 +140,8 @@ body{
     margin-left: 1vw;
 }
 .footer{
-  padding-left: 38vw;
+  padding-left: 14vw;
+  font-size: 2.5vw;
 }
 
 .row{
@@ -151,7 +154,7 @@ body{
 }
 .nav-link{
   color: white;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 .foot{
   height:5vw;
@@ -159,6 +162,9 @@ body{
   margin-top:2px;
 }
 
+#brand{
+   margin-left: 16vw;
+}
  
 #Q{
     font-size: 4vw;  
@@ -206,7 +212,7 @@ margin-left: 5px;
   width: 15vw;
   border-radius: 10px;
   margin-top: -3vw;
-  margin-left: 40vw;
+  margin-left: 39vw;
   border-radius: 5px;
   font-size: 3vw;
   justify-content: center;
@@ -238,22 +244,21 @@ margin-left: 5px;
   margin-right: 5px;
   width: 5vw;
   font-size: 1.4vw;
-  padding-left:  5px;
   justify-content: center;
-  /*text-align: center;*/
-  border:0;
-  /*height: 4vw;*/
+  text-align: center;
+  margin: auto;
+  padding: 10px;
 }
 .button {
-  background-color: #4CAF50;
-  border: none;
+  background-color: #001a33;
+  border: 0;
+  outline: none !important;
+  box-shadow: none !important;
   color: white;
-  padding-right: 10px;
-  padding-bottom: 5px;
   text-align: center;
   display: inline-block;
   font-size: 14px;
-  cursor: pointer;
+  /*cursor: pointer;*/
 margin-top: 40px;
   margin-right: 10px;
   border-radius: 10px;
@@ -318,8 +323,12 @@ background-color:  #80bfff;
   }
 
 .modal-body{
-  /*font-size: 20px;*/
   font-family: times new roman;
+}
+.modal-title{
+  justify-content: center;
+  text-align: center;
+  border: 50px blue;
 }
 
 #indent{
