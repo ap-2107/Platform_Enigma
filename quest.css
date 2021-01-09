@@ -1,6 +1,3 @@
-html{
-  height: 50%;
-}
 body{
   /*background-color:#013226;*/
   background-image:  url('puz.jpg');
@@ -80,17 +77,17 @@ padding:0.5%;
 padding:0.5%;
 }
 #OP{
-    font-size: 1.75vw;    
+    font-size: 1.5vw;    
     padding-left: 5px;
 }
 
 #OPx{
-    font-size: 1.75vw;    
+    font-size: 1.5vw;    
     padding-left: 10px;
     margin-left: 18px;
 }
 #Q{
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     padding-left: 18px;
     padding-top: 10px;
     
@@ -171,7 +168,7 @@ font-family: 'Source Sans Pro', sans-serif;
   display: none;
 }
 #OP{
-    font-size: 3vw; 
+    font-size: 3.5vw; 
     margin-left: 1vw;
 }
 .footer{
@@ -199,7 +196,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
  
 #Q{
-    font-size: 3vw;  
+    font-size: 3.5vw;  
     width: 100%;
     padding: 5px;
 
