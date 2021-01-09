@@ -1,8 +1,10 @@
+html{
+  height: 50%;
+}
 body{
   /*background-color:#013226;*/
   background-image:  url('puz.jpg');
-   
-  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media screen and (min-width:768px){
@@ -29,7 +31,7 @@ body{
   background-color: black;
 }
 .footer{
-  padding-left: 32vw;
+  /*padding-left: 32vw;*/
   padding-top: 5px;
 }
 .foot{
@@ -37,38 +39,53 @@ body{
   margin-left: 0
   padding-top:5px;
 }
-
-.row{
-  padding-left: 12vw;
-  height: 65%;
+.small{
+  display: none;
 }
+
+/*
 #endButtons{
   margin-top: 1vw;
-  margin-left: 12vw;
+  margin-left:  13%;
   background-color:#001a33;
   color: white;
-  width: 8vw;
-  height: 2vw;
+  width: 15%;
   border-radius: 10px;
-  padding-bottom: 30px;
+  padding:10px;
   box-shadow: 5px;
-}
-#endSubmit{
-  background-color:#0066cc;
-  color: black;
-  width: 15vw;
-  margin-bottom: 5px;
+}*/
+.form_button{
+  background-color:#001a33;
+  color: white;
+  /*width: 10%;*/
   border-radius: 10px;
-  margin-top: -15px;
-  margin-left: 40vw;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #001a33;
+  font-size: 100%;
+  width:15%;
+padding:0.5%;
+  justify-content: center;
+}
+#form_button{
+  margin-top: 3%;
+  background-color:#0066cc;
+  color: white;
+  width: 20%;
+  border-radius: 10px;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #0066cc;
+  font-size: 120%;
+padding:0.5%;
 }
 #OP{
-    font-size: 2vw;    
+    font-size: 1.75vw;    
     padding-left: 5px;
 }
 
 #OPx{
-    font-size: 2vw;    
+    font-size: 1.75vw;    
     padding-left: 10px;
     margin-left: 18px;
 }
@@ -91,9 +108,7 @@ body{
 .navbar-brand{
   font-size: 2vw;
 }
-#brand{
-   margin-left: 16vw;
-}
+
 #countdown{
   /*background-color: #fff;*/
   display: flex;
@@ -103,9 +118,7 @@ body{
   height: 50px;
   width: 150px;
   background-color:#000;
-  margin: 0px;
-  left: 55%;
-  right: 0%;
+  /*left: 55%;*/
 }
 
 .mob{
@@ -118,14 +131,29 @@ body{
   right: -20px;
 
 }
+.button:hover {background-color: #001a33;}
+
+.button {
+  background-color:  #003566;
+  outline: none !important;
+  box-shadow: none !important;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1.5vw;
+  margin: 1.5vw;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
 }
 @media screen and (max-width: 767px){
   .body{
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
-    font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
   }
 .containers{
    position: absolute;
@@ -136,27 +164,32 @@ font-family: 'Roboto', sans-serif;
   width: 600px;
   height: 200px;
 }
-
+#pisb{
+  display: none;
+}
+.big{
+  display: none;
+}
 #OP{
-    font-size: 4vw; 
+    font-size: 3vw; 
     margin-left: 1vw;
 }
 .footer{
-  padding-left: 14vw;
+  /*padding-left: 14vw;*/
   font-size: 2.5vw;
 }
 
 .row{
-  padding-left: 12vw;
-  height: 100%;
+/*  padding-left: 12vw;
+  height: 100%;*/
 }
-.navbar-brand{
+/*.navbar-brand{
   font-size: 4vw;
   margin-bottom: 0;
-}
+}*/
 .nav-link{
   color: white;
-  font-size: 2.5vw;
+  font-size:3vw;
 }
 .foot{
   height:5vw;
@@ -164,12 +197,9 @@ font-family: 'Roboto', sans-serif;
   margin-top:2px;
 }
 
-#brand{
-   margin-left: 16vw;
-}
  
 #Q{
-    font-size: 4vw;  
+    font-size: 3vw;  
     width: 100%;
     padding: 5px;
 
@@ -178,14 +208,14 @@ font-family: 'Roboto', sans-serif;
   width: 1000px;
 }
 
-.row{
+/*.row{
   padding-left: 24vw;
   height: 68%;
   width: 400%
 margin-left: 5px;
-}
+}*/
 .container-fluid{
-   margin-top: 22vw;
+   margin-top: 15vw;
     padding-top: 5%;
     float: right;
     /*background-color:#013226;*/
@@ -194,14 +224,36 @@ margin-left: 5px;
 
 }
 .coast{
-  height: 800%;
+  height: auto;
 }
-#endButtons{
+.form_button{
+  background-color:#001a33;
+  color: white;
+  width: 20%;
+  border-radius: 10px;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #001a33;
+  /*font-size: 1.5vw;*/
+  justify-content: center;
+}
+#form_button{
+  margin-top: 3%;
+  background-color:#0066cc;
+  color: white;
+  width: 35%;
+  border-radius: 10px;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #0066cc;
+}
+
+/*#endButtons{
   margin-top: 6vw;
   margin-left: 5vw;
   background-color:#001a33;
   color: white;
-  width: 10vw;
+  width: 18%;
   border-radius: 5px;
   padding-left: 7px;
   justify-content: center;
@@ -219,7 +271,7 @@ margin-left: 5px;
   font-size: 3vw;
   justify-content: center;
 }
-
+*/
 #countdown{
   display: flex;
   align-items: center;
@@ -227,9 +279,6 @@ margin-left: 5px;
   height: 50px;
   width: 150px;
   background-color:#000;
-  margin: 0px;
-  left: 1%;
-  right: 0%;
 }
 
 .navbar{
@@ -251,21 +300,22 @@ margin-left: 5px;
   margin: auto;
   padding: 10px;
 }
+.button:hover {background-color: #001a33;}
+
 .button {
-  background-color: #001a33;
+  background-color:  #003566;
   border: 0;
   outline: none !important;
   box-shadow: none !important;
   color: white;
   text-align: center;
   display: inline-block;
-  font-size: 14px;
-  /*cursor: pointer;*/
-margin-top: 40px;
-  margin-right: 10px;
+justify-content: center;
   border-radius: 10px;
   font-size: 1.5vw;
-  font-family: times new roman;
+  margin: 1.5vw;
+  height: auto;
+font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -280,14 +330,9 @@ margin-top: 40px;
   float: right;
 }
 .coast {
-  padding:1px;
-/*  background: linear-gradient(0deg,#137c5f, #44bb97, #99ebd2);*/
-background-color:  #80bfff;
-
-}
-.col-lg-8 .col-md-5 .col-sm-8 {
-  padding-left: 100px;
-  
+background-color: #cce6ff;
+margin-bottom: 2vw;
+margin-top: 0.5vw;
 }
 
 
@@ -323,14 +368,28 @@ background-color:  #80bfff;
   .floating a:hover{
     transform: translate(40%, 0);
   }
+.modal-header{
+  background-color: #cce6ff;
+ 
+ text-decoration-color: #001a33;
 
-.modal-body{
-  font-family: times new roman;
 }
-.modal-title{
-  justify-content: center;
+.modal-body{
+font-family: 'Source Sans Pro', sans-serif;
+background-color: #cce6ff;
+
+}
+h4{
+  background-color: #cce6ff;
+/*  margin: 0;
+  padding: 0;
+  display: flex;*/
+
+  /*justify-content: center;*/
+  /*align-items: center;*/
   text-align: center;
-  border: 50px blue;
+    /*margin: auto;*/
+  /*border: 50px blue;*/
 }
 
 #indent{
@@ -345,7 +404,6 @@ background-color:  #80bfff;
    width: 100%;
    background-color: #000;
    color: white;
-   
 }
 
 .time{
