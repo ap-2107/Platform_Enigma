@@ -1,3 +1,4 @@
+
 body{
   /*background-color:#013226;*/
   background-image:  url('puz.jpg');
@@ -26,6 +27,7 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 .navbar{
   background-color: black;
+  color: white;
 }
 .footer{
   /*padding-left: 32vw;*/
@@ -40,17 +42,12 @@ font-family: 'Source Sans Pro', sans-serif;
   display: none;
 }
 
-/*
-#endButtons{
-  margin-top: 1vw;
-  margin-left:  13%;
-  background-color:#001a33;
+.time{
+  font-size: 3vw;
   color: white;
-  width: 15%;
-  border-radius: 10px;
-  padding:10px;
-  box-shadow: 5px;
-}*/
+  justify-content: center;
+
+}
 .form_button{
   background-color:#001a33;
   color: white;
@@ -99,11 +96,14 @@ padding:0.5%;
     float: right;
     width: 100%;
 }
-.nav-link{
+.nav-item{
   color: white;
 }
 .navbar-brand{
-  font-size: 2vw;
+  font-size: 2vw;}
+#enig_logo{
+  height: 50px; 
+  width: 4vw;
 }
 
 #countdown{
@@ -115,7 +115,7 @@ padding:0.5%;
   height: 50px;
   width: 150px;
   background-color:#000;
-  /*left: 55%;*/
+  margin-left: 40%;  /*left: 55%;*/
 }
 
 .mob{
@@ -175,16 +175,18 @@ font-family: 'Source Sans Pro', sans-serif;
   /*padding-left: 14vw;*/
   font-size: 2.5vw;
 }
-
-.row{
-/*  padding-left: 12vw;
-  height: 100%;*/
+#enig_logo{
+  height: 48px; 
+  width: 15vw;
 }
-/*.navbar-brand{
-  font-size: 4vw;
-  margin-bottom: 0;
-}*/
-.nav-link{
+
+.time{
+  font-size: 7vw;
+  color: white;
+  justify-content: center;
+
+}
+.nav-item{
   color: white;
   font-size:3vw;
 }
@@ -205,12 +207,6 @@ font-family: 'Source Sans Pro', sans-serif;
   width: 1000px;
 }
 
-/*.row{
-  padding-left: 24vw;
-  height: 68%;
-  width: 400%
-margin-left: 5px;
-}*/
 .container-fluid{
    margin-top: 15vw;
     padding-top: 5%;
@@ -245,41 +241,22 @@ margin-left: 5px;
   border-color: #0066cc;
 }
 
-/*#endButtons{
-  margin-top: 6vw;
-  margin-left: 5vw;
-  background-color:#001a33;
-  color: white;
-  width: 18%;
-  border-radius: 5px;
-  padding-left: 7px;
-  justify-content: center;
-  font-size: 2.5vw;
-  margin-bottom: 5px;
-}
-#endSubmit{
-  background-color: #0066cc;
-  color: white;
-  width: 15vw;
-  border-radius: 10px;
-  margin-top: -3vw;
-  margin-left: 39vw;
-  border-radius: 5px;
-  font-size: 3vw;
-  justify-content: center;
-}
-*/
+
 #countdown{
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   font-size: 0.5vw;
   height: 50px;
   width: 150px;
   background-color:#000;
+  margin-left: 2%;
+  padding-top: 2%;
+  /*margin-top: 2%;*/
 }
 
 .navbar{
   background-color: #000;
+  color: white;
 }
 }
 .d-flex {
@@ -328,7 +305,7 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 .coast {
 background-color: #cce6ff;
-margin-bottom: 1vw;
+margin-bottom: 2vw;
 margin-top: 0.5vw;
 }
 
@@ -403,12 +380,6 @@ h4{
    color: white;
 }
 
-.time{
-  font-size: 3.5vw;
-  color: white;
-  justify-content: center;
-
-}
 div {
   overflow: hidden;
 }
