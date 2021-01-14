@@ -1,4 +1,4 @@
-  <html lang="en">
+   <html lang="en">
 <head>
   <title>Enigma</title>
   <meta charset="utf-8">
@@ -67,7 +67,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <p style="margin: 2.5vw;">
+            <p>
             <ol style="font-size:1.6vw;"><li>This paper contains 35 questions.</li>
 			<li>The answer to the questions can be MCQ, single word or integer type.</li>
 			<li>Paper contains three types of questions-
@@ -78,12 +78,12 @@
 			<li>	There is NO NEGATIVE MARKING.</li>
 			<li>	Maximum time allotted: 40 min</li>
 			<li>	Before toggling between two questions, you need to spend minimum 10 sec on the current question.</li>
-			<li>	Each page will have four buttons-</li>
+			<li>	Each page will have three buttons-</li>
 			
 						<ul><li>Previous : save and previous</li>
 						<li>Next&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : save and next</li>
 						<li>Submit&nbsp;&nbsp;&nbsp;: submit test</li>
-						<li>Clear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : clear response</li></ul>
+						</ul>
 			<li>	Paper will be auto submitted after time runs out.</li>
 			<li>	No queries regarding the correctness of the question shall be entertained.</li>
 		   	<li>	Internet and power failure problems will not be entertained.</li></p>
@@ -215,7 +215,8 @@
 </div>
 
   <div class="row justify-content-center" style="margin-bottom: 3vw;">
-   <div class="col-lg-10 col-md-5 col-sm-8 col-8 coast"><p id="Q">Q1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?</p>
+   <div class="col-lg-10 col-md-5 col-sm-8 col-8 coast"style="color: white" ><p id="Q" >Q1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?</p>
+
                     <input type="radio" id="OPx" name="Options" value="Answer">
                     <label for="O1" id="OP">  Option1</label><br>
                     <input type="radio" id="OPx" name="Options" value="Answer">
@@ -226,9 +227,9 @@
                     <label for="O4" id="OP">  Option4</label><br><br>
     <form>
     	<div class="form-row d-flex justify-content-around">
-    		<button class="form_button">Prev</button>
-    		<button class="form_button">Save</button>
-    		<button class="form_button">Next</button>
+    		<button type="button" class="form_button" onclick="window.location.href='https://google.com';">Prev</button> 
+    	   <button type="button" class="form_button" onclick="window.location.href='https://google.com';">Save</button>  
+    		<button type="button" class="form_button" onclick="window.location.href='https://google.com';">Next</button> 
     	</div>
 
     	<div class="form-row d-flex justify-content-center" >
