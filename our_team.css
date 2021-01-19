@@ -64,7 +64,7 @@ body{
     font-family: 'Abel', sans-serif;
     border-radius:5px;
     cursor:pointer;
-    margin-left:6vw;
+    margin-left:9.5vw;
 }
 .main2{
     height: 20vw;
@@ -74,7 +74,7 @@ body{
     font-family: 'Abel', sans-serif;
     border-radius:5px;
     cursor: pointer;
-    margin-left:4vw;
+    margin-left:5vw;
 }
 .main3{
     height: 20vw;
@@ -84,7 +84,7 @@ body{
     font-family: 'Abel', sans-serif;
     border-radius:5px;
     cursor: pointer;
-    margin-left:4vw;
+    margin-left:3vw;
 }
 #main1{
     background-image: url("as.jpeg");
